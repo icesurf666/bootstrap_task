@@ -1,4 +1,3 @@
-import './initSwiper';
 import * as $ from 'jquery';
 
 const asyncModule = import('./asyncModule');

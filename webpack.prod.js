@@ -2,6 +2,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const ImageminPlugin = require('imagemin-webpack-plugin').default;
 const { merge } = require('webpack-merge');
 const TerserPlugin = require('terser-webpack-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const common = require('./webpack.common.js');
 
 module.exports = merge(common, {
@@ -10,6 +11,11 @@ module.exports = merge(common, {
     minimizer: [
       new TerserPlugin({
         extractComments: false,
+      }),
+      new CssMinimizerPlugin({
+        minify: CssMinimizerPlugin.cleanCssMinify,
+        // Uncomment this line for options
+        // minimizerOptions: { compatibility: 'ie11,-properties.merging' },
       }),
     ],
   },
