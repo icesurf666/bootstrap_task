@@ -237,7 +237,6 @@ ul li {
   text-align: center;
   background-color: #fff;
   border-radius: 10px;
-  border-radius: 10px;
 }
 
 .news {
@@ -276,12 +275,6 @@ ul li {
   display: flex;
   justify-content: space-between;
   padding: 32px 0 26px;
-}
-
-.burger-menu {
-  display: none;
-  width: 24px;
-  height: 24px;
 }
 
 .flex-footer {

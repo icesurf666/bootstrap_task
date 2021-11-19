@@ -1,7 +1,12 @@
+// eslint-disable-next-line import/no-extraneous-dependencies
 const path = require('path');
+// eslint-disable-next-line import/no-extraneous-dependencies
 const glob = require('glob');
+// eslint-disable-next-line import/no-extraneous-dependencies
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+// eslint-disable-next-line import/no-extraneous-dependencies
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+// eslint-disable-next-line import/no-extraneous-dependencies
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
@@ -70,7 +75,6 @@ module.exports = {
   plugins: [
     new MiniCssExtractPlugin({
       filename: 'css/[name].css',
-      chunkFilename: 'css/[id].css',
     }),
     new CopyWebpackPlugin({
       patterns: [
