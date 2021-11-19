@@ -32,9 +32,8 @@ module.exports = {
           {
             loader: MiniCssExtractPlugin.loader,
             options: {
-              publicPath: (resourcePath, context) => {
-                return path.relative(path.dirname(resourcePath), context) + '/';
-              },
+              publicPath: (resourcePath, context) =>
+                `${path.relative(path.dirname(resourcePath), context)}/`,
             },
           },
           {
@@ -81,12 +80,13 @@ module.exports = {
         },
       ],
     }),
-    ...glob.sync('./src/*.html').map((htmlFile) => {
-      return new HtmlWebpackPlugin({
-        inject: true,
-        filename: path.basename(htmlFile),
-        template: path.basename(htmlFile),
-      });
-    }),
+    ...glob.sync('./src/*.html').map(
+      (htmlFile) =>
+        new HtmlWebpackPlugin({
+          inject: true,
+          filename: path.basename(htmlFile),
+          template: path.basename(htmlFile),
+        }),
+    ),
   ],
 };

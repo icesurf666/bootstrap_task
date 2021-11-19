@@ -21,7 +21,7 @@
   box-shadow: inset 0 -1px 0 #d1d2d6;
 }
 
-.nv-logo {
+.nav-logo {
   display: flex;
   align-items: center;
   font-family: Roboto Slab;
@@ -32,11 +32,11 @@
   color: #1a1b22;
 }
 
-.nv-menu {
+.nav-menu {
   display: flex;
 }
 
-.nv-list {
+.nav-list {
   display: flex;
   align-items: center;
   padding: 0;
@@ -284,14 +284,14 @@ ul li {
   height: 24px;
 }
 
-.flexFooter {
+.flex-footer {
   display: flex;
   flex-direction: column-reverse;
   justify-content: space-between;
   width: 100%;
 }
 
-.textAndIconsFlex {
+.text-icons-flex {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -300,7 +300,7 @@ ul li {
   margin-top: 20px;
 }
 
-.mainFooter {
+.main-footer {
   display: flex;
   align-items: center;
   padding-bottom: 30px;
@@ -311,7 +311,7 @@ ul li {
   line-height: 24px;
 }
 
-.yaProfi {
+.yandex {
   display: flex;
   align-items: center;
   padding-bottom: 30px;
@@ -322,7 +322,7 @@ ul li {
   line-height: 24px;
 }
 
-.footerText {
+.footer-text {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -336,7 +336,7 @@ ul li {
   color: #b6bcbf;
 }
 
-.iconsFooter {
+.icons-footer {
   display: flex;
   align-items: baseline;
 }
@@ -366,7 +366,7 @@ ul li {
     justify-content: center;
   }
 
-  .desktop {
+  .desktop-v {
     display: none;
   }
 
@@ -374,7 +374,7 @@ ul li {
     display: flex;
   }
 
-  .nv-menu {
+  .nav-menu {
     display: none;
   }
 
