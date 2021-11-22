@@ -127,6 +127,7 @@ ul li {
 
 .card img {
   border-radius: 16px 16px 0 0;
+  max-width: 100%;
 }
 
 .date {
@@ -343,10 +344,15 @@ ul li {
 }
 
 @media (max-width: 720px) {
+  .footer-menu {
+    flex-direction: column;
+  }
   .navigation {
     padding: 30px 10px 26px;
   }
-
+  .card {
+    width: auto;
+  }
   .promo {
     padding: 40px 10px 56px;
   }
